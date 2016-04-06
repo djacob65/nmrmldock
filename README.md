@@ -19,8 +19,8 @@ $ docker build -t nmrmlconv .
 ### Usage
 
 ```
-$ docker run -i --rm nmrmlconv -l create
-$ docker run -i --rm nmrmlconv -l proc
+$ docker run -i --rm nmrmlconv -l create -h
+$ docker run -i --rm nmrmlconv -l proc -h
 ```
 
 ### Example
