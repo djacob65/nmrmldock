@@ -19,17 +19,19 @@ $ docker build -t nmrmlconv .
 ### Usage
 
 ```
-$ docker run -i --rm nmrmlconv -l create -h
-$ docker run -i --rm nmrmlconv -l proc -h
+$ alias dockrun='docker run -i --rm'
+$ dockrun nmrmlconv -l create -h
+$ dockrun nmrmlconv -l proc -h
 ```
 
 ### Example
 
 ```
-docker run -i -v `pwd`/examples:/data --rm nmrmlconv \
+$ alias dockrun='docker run -i --rm'
+$ dockrun -v `pwd`/examples:/data nmrmlconv \
       -l create -b -z -t bruker -i /data/MMBBI_10M12-CE01-1a/1 -o /data/MMBBI_10M12-CE01-1a.nmrML
 
-docker run -i -v `pwd`/examples:/data --rm nmrmlconv \
+$ dockrun -v `pwd`/examples:/data nmrmlconv \
       -l proc -i /data/MMBBI_10M12-CE01-1a.nmrML -d /data/MMBBI_10M12-CE01-1a/1/pdata/1 -o /data/MMBBI_10M12-CE01-1a.nmrML
 ```
 
