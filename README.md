@@ -16,7 +16,7 @@ Requirements:
 $ docker build -t nmrmlconv .
 ```
 
-### Usage
+#### Usage
 
 ```
 $ alias dockrun='docker run -i --rm'
@@ -24,7 +24,7 @@ $ dockrun nmrmlconv -l create -h
 $ dockrun nmrmlconv -l proc -h
 ```
 
-### Example
+#### Example
 
 ```
 $ alias dockrun='docker run -i --rm'
